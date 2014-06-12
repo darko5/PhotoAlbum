@@ -10,4 +10,8 @@
 
 @interface PAViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+
+- (IBAction)loginButtonTapped:(id)sender;
+
 @end
