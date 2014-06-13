@@ -7,10 +7,6 @@
 //
 
 #import "PADetailsViewController.h"
-#import <Heatmaps/Heatmaps.h>
-#import "GAI.h"
-#import "GAIFields.h"
-#import "GAIDictionaryBuilder.h"
 
 @interface PADetailsViewController ()
 
@@ -32,29 +28,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [_imageView setImage:[UIImage imageNamed:_imageName]];
-}
-
--(void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    [Heatmaps track:self.view withKey:@"5a0a2a984d9a014a-04eb816a"];
-    
-    // May return nil if a tracker has not already been initialized with a
-    // property ID.
-    id tracker = [[GAI sharedInstance] defaultTracker];
-    
-    // This screen name value will remain set on the tracker and sent with
-    // hits until it is set to a new value or to nil.
-    [tracker set:kGAIScreenName
-           value:@"Details Screen"];
-    
-    [tracker send:[[GAIDictionaryBuilder createAppView] build]];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-    [Heatmaps stopTrackingElementWithKey:@"5a0a2a984d9a014a-04eb816a"];
 }
 
 - (void)didReceiveMemoryWarning

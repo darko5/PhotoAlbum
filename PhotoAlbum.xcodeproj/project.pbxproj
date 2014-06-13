@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E2AC19C194A260E00FBBA5F /* PASettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2AC19B194A260E00FBBA5F /* PASettingsViewController.m */; };
 		8EB91F57194788DF00DB0CC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB91F56194788DF00DB0CC0 /* Foundation.framework */; };
 		8EB91F59194788DF00DB0CC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB91F58194788DF00DB0CC0 /* CoreGraphics.framework */; };
 		8EB91F5B194788DF00DB0CC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB91F5A194788DF00DB0CC0 /* UIKit.framework */; };
@@ -25,7 +26,6 @@
 		8EB91F8F19478CB300DB0CC0 /* register_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EB91F8E19478CB300DB0CC0 /* register_button.png */; };
 		8EB91F9119478DCA00DB0CC0 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EB91F9019478DCA00DB0CC0 /* logo.png */; };
 		8EB91F971947966C00DB0CC0 /* PATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB91F961947966C00DB0CC0 /* PATableViewController.m */; };
-		8ECA51C61947A5660034C3DD /* Heatmaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECA51C51947A5660034C3DD /* Heatmaps.framework */; };
 		8ECA51C81947A6A60034C3DD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECA51C71947A6A60034C3DD /* CFNetwork.framework */; };
 		8ECA51CA1947A6BC0034C3DD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECA51C91947A6BC0034C3DD /* SystemConfiguration.framework */; };
 		8ECA51CC1947A6C80034C3DD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECA51CB1947A6C80034C3DD /* MobileCoreServices.framework */; };
@@ -36,7 +36,6 @@
 		8ECA51D91948C25C0034C3DD /* one.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ECA51D51948C25C0034C3DD /* one.png */; };
 		8ECA51DA1948C25C0034C3DD /* three.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ECA51D61948C25C0034C3DD /* three.png */; };
 		8ECA51DB1948C25C0034C3DD /* two.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ECA51D71948C25C0034C3DD /* two.png */; };
-		8ECA51E41948C7B40034C3DD /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECA51E31948C7B40034C3DD /* libGoogleAnalyticsServices.a */; };
 		8ECA51E61948C8240034C3DD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECA51E51948C8240034C3DD /* CoreData.framework */; };
 		8ECA51E81948C84A0034C3DD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECA51E71948C84A0034C3DD /* AdSupport.framework */; };
 		8ECA51EA1948CB590034C3DD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECA51E91948CB590034C3DD /* libsqlite3.dylib */; };
@@ -53,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E2AC19A194A260E00FBBA5F /* PASettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASettingsViewController.h; sourceTree = "<group>"; };
+		8E2AC19B194A260E00FBBA5F /* PASettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASettingsViewController.m; sourceTree = "<group>"; };
+		8E2AC19D194A2A1E00FBBA5F /* PASettingsViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PASettingsViewControllerDelegate.h; sourceTree = "<group>"; };
 		8EB91F53194788DF00DB0CC0 /* PhotoAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB91F56194788DF00DB0CC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8EB91F58194788DF00DB0CC0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -77,7 +79,6 @@
 		8EB91F9019478DCA00DB0CC0 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		8EB91F951947966C00DB0CC0 /* PATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PATableViewController.h; sourceTree = "<group>"; };
 		8EB91F961947966C00DB0CC0 /* PATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PATableViewController.m; sourceTree = "<group>"; };
-		8ECA51C51947A5660034C3DD /* Heatmaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Heatmaps.framework; sourceTree = "<group>"; };
 		8ECA51C71947A6A60034C3DD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		8ECA51C91947A6BC0034C3DD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8ECA51CB1947A6C80034C3DD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -89,13 +90,6 @@
 		8ECA51D51948C25C0034C3DD /* one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = one.png; sourceTree = "<group>"; };
 		8ECA51D61948C25C0034C3DD /* three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = three.png; sourceTree = "<group>"; };
 		8ECA51D71948C25C0034C3DD /* two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = two.png; sourceTree = "<group>"; };
-		8ECA51DD1948C7940034C3DD /* GAI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
-		8ECA51DE1948C7940034C3DD /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
-		8ECA51DF1948C7940034C3DD /* GAIFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
-		8ECA51E01948C7940034C3DD /* GAILogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
-		8ECA51E11948C7940034C3DD /* GAITrackedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
-		8ECA51E21948C7940034C3DD /* GAITracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
-		8ECA51E31948C7B40034C3DD /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		8ECA51E51948C8240034C3DD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8ECA51E71948C84A0034C3DD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		8ECA51E91948CB590034C3DD /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -111,11 +105,9 @@
 				8ECA51E61948C8240034C3DD /* CoreData.framework in Frameworks */,
 				8ECA51CE1947A6D40034C3DD /* libz.dylib in Frameworks */,
 				8ECA51CC1947A6C80034C3DD /* MobileCoreServices.framework in Frameworks */,
-				8ECA51E41948C7B40034C3DD /* libGoogleAnalyticsServices.a in Frameworks */,
 				8ECA51CA1947A6BC0034C3DD /* SystemConfiguration.framework in Frameworks */,
 				8ECA51C81947A6A60034C3DD /* CFNetwork.framework in Frameworks */,
 				8EB91F59194788DF00DB0CC0 /* CoreGraphics.framework in Frameworks */,
-				8ECA51C61947A5660034C3DD /* Heatmaps.framework in Frameworks */,
 				8EB91F5B194788DF00DB0CC0 /* UIKit.framework in Frameworks */,
 				8EB91F57194788DF00DB0CC0 /* Foundation.framework in Frameworks */,
 			);
@@ -163,7 +155,6 @@
 				8ECA51CB1947A6C80034C3DD /* MobileCoreServices.framework */,
 				8ECA51C91947A6BC0034C3DD /* SystemConfiguration.framework */,
 				8ECA51C71947A6A60034C3DD /* CFNetwork.framework */,
-				8ECA51C51947A5660034C3DD /* Heatmaps.framework */,
 				8EB91F56194788DF00DB0CC0 /* Foundation.framework */,
 				8EB91F58194788DF00DB0CC0 /* CoreGraphics.framework */,
 				8EB91F5A194788DF00DB0CC0 /* UIKit.framework */,
@@ -175,10 +166,11 @@
 		8EB91F5C194788DF00DB0CC0 /* PhotoAlbum */ = {
 			isa = PBXGroup;
 			children = (
-				8ECA51DC1948C77E0034C3DD /* Google Analytics */,
 				8EB91F65194788DF00DB0CC0 /* PAAppDelegate.h */,
 				8EB91F66194788DF00DB0CC0 /* PAAppDelegate.m */,
 				8EB91F68194788DF00DB0CC0 /* Main.storyboard */,
+				8E2AC19A194A260E00FBBA5F /* PASettingsViewController.h */,
+				8E2AC19B194A260E00FBBA5F /* PASettingsViewController.m */,
 				8EB91F6B194788DF00DB0CC0 /* PAViewController.h */,
 				8EB91F6C194788DF00DB0CC0 /* PAViewController.m */,
 				8EB91F6E194788DF00DB0CC0 /* Images.xcassets */,
@@ -188,6 +180,7 @@
 				8EB91F961947966C00DB0CC0 /* PATableViewController.m */,
 				8ECA51D11948BC600034C3DD /* PADetailsViewController.h */,
 				8ECA51D21948BC600034C3DD /* PADetailsViewController.m */,
+				8E2AC19D194A2A1E00FBBA5F /* PASettingsViewControllerDelegate.h */,
 			);
 			path = PhotoAlbum;
 			sourceTree = "<group>";
@@ -234,20 +227,6 @@
 				8EB91F8C19478C6900DB0CC0 /* login_button.png */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		8ECA51DC1948C77E0034C3DD /* Google Analytics */ = {
-			isa = PBXGroup;
-			children = (
-				8ECA51E31948C7B40034C3DD /* libGoogleAnalyticsServices.a */,
-				8ECA51DD1948C7940034C3DD /* GAI.h */,
-				8ECA51DE1948C7940034C3DD /* GAIDictionaryBuilder.h */,
-				8ECA51DF1948C7940034C3DD /* GAIFields.h */,
-				8ECA51E01948C7940034C3DD /* GAILogger.h */,
-				8ECA51E11948C7940034C3DD /* GAITrackedViewController.h */,
-				8ECA51E21948C7940034C3DD /* GAITracker.h */,
-			);
-			name = "Google Analytics";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +337,7 @@
 			files = (
 				8EB91F63194788DF00DB0CC0 /* main.m in Sources */,
 				8ECA51D31948BC600034C3DD /* PADetailsViewController.m in Sources */,
+				8E2AC19C194A260E00FBBA5F /* PASettingsViewController.m in Sources */,
 				8EB91F6D194788DF00DB0CC0 /* PAViewController.m in Sources */,
 				8EB91F971947966C00DB0CC0 /* PATableViewController.m in Sources */,
 				8EB91F67194788DF00DB0CC0 /* PAAppDelegate.m in Sources */,

@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PASettingsViewControllerDelegate.h"
 
-@interface PATableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@class PASettingsViewController;
+
+@interface PATableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, PASettingsViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong) PASettingsViewController *settingsViewController;
 
 @end

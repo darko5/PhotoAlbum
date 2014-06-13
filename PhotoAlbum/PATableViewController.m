@@ -8,10 +8,7 @@
 
 #import "PATableViewController.h"
 #import "PADetailsViewController.h"
-#import <Heatmaps/Heatmaps.h>
-#import "GAI.h"
-#import "GAIFields.h"
-#import "GAIDictionaryBuilder.h"
+#import "PASettingsViewController.h"
 
 @interface PATableViewController ()
 {
@@ -27,29 +24,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view. .
     _words = @[@"one", @"two", @"three", @"four", @"five"];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    [Heatmaps track:self.view withKey:@"5a0a2a984d9a014a-144ad2db"];
-    
-    // May return nil if a tracker has not already been initialized with a
-    // property ID.
-    id tracker = [[GAI sharedInstance] defaultTracker];
-    
-    // This screen name value will remain set on the tracker and sent with
-    // hits until it is set to a new value or to nil.
-    [tracker set:kGAIScreenName
-           value:@"Table Screen"];
-    
-    [tracker send:[[GAIDictionaryBuilder createAppView] build]];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-    [Heatmaps stopTrackingElementWithKey:@"5a0a2a984d9a014a-144ad2db"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -88,13 +62,17 @@
         PADetailsViewController *detailsViewController = segue.destinationViewController;
         NSString *imageName = [NSString stringWithFormat:@"%@.png", [_words objectAtIndex:indexPath.row]];
         detailsViewController.imageName = imageName;
-        id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
-        
-        [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"ui_action"     // Event category (required)
-                                                              action:@"table_row_select"  // Event action (required)
-                                                               label:[_words objectAtIndex:indexPath.row]   // Event label
-                                                               value:[NSNumber numberWithInteger:indexPath.row]] build]];    // Event value
+    } else if ([segue.identifier isEqualToString:@"SettingsSegue"]) {
+        _settingsViewController = segue.destinationViewController;
+        _settingsViewController.delegate = self;
     }
+}
+
+#pragma mark - PASettingsViewControllerDelefate
+
+- (void)backButtonTapped
+{
+    [_settingsViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
